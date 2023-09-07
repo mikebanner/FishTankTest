@@ -9,13 +9,8 @@ public class Goldfish : IFeedableFish
         _feedWeight = 0.1m;
         _fishName = name;
     }
-    public decimal GetFeedAmount()
-    {
-        return _feedWeight;
-    }
 
-    public string GetName()
-    {
-        return _fishName;
-    }
+    public decimal GetFeedAmount() => _feedWeight;
+
+    public string GetName() => _fishName;
 }
