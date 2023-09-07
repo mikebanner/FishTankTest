@@ -7,11 +7,9 @@ public class BabelFish : IFeedableFish
     public BabelFish(string name)
     {
         _fishName = name;
-    }
-    public decimal GetFeedAmount()
-    {
-        throw new NotImplementedException();
+        _feedWeight = 0.3m;
     }
 
+    public decimal GetFeedAmount() => _feedWeight;
     public string GetName() => _fishName;
 }
