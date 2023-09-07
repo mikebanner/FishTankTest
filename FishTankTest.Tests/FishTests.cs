@@ -5,7 +5,7 @@ public class FishTests
     [Fact]
     public void GoldfishReturnsCorrectName()
     {
-        var fish = new Goldfish(0.1m, "Bob Marley");
+        var fish = new Goldfish("Bob Marley");
 
         var result = fish.GetName();
         

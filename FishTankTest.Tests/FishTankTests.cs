@@ -24,7 +24,7 @@ public class FishTankTests
 
         for (int i = 0; i < numberOfGoldFish; i++)
         {
-            sut.AddFish(new Goldfish(0.1m, $"James Bond {i}"));
+            sut.AddFish(new Goldfish($"James Bond {i}"));
         }
 
         var result = sut.Feed();
