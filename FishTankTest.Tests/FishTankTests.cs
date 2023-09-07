@@ -67,4 +67,18 @@ public class FishTankTests
         
         Assert.Equal(expectedWeight, result);
     }
+
+    [Fact]
+    public void FishTankWithSingleFishOfEachTypeReturnsCorrectFeedWeight()
+    {
+        var sut = new FishTank();
+        
+        sut.AddFish(new Goldfish("Goldie"));
+        sut.AddFish(new AngelFish("Angelica"));
+        sut.AddFish(new BabelFish("Babylon"));
+
+        var result = sut.Feed();
+        
+        Assert.Equal(0.6m, result);
+    }
 }
