@@ -31,4 +31,24 @@ public class FishTests
 
         Assert.Equal(0.2m, result);
     }
+    
+    [Fact]
+    public void BabelfishReturnsCorrectName()
+    {
+        var fish = new BabelFish("Babylon");
+
+        var result = fish.GetName();
+        
+        Assert.Equal("Babylon", result);
+    }
+    
+    [Fact]
+    public void BabelFishReturnsCorrectWeightOfFood()
+    {
+        var sut = new BabelFish("Babylon");
+
+        var result = sut.GetFeedAmount();
+
+        Assert.Equal(0.3m, result);
+    }
 }
