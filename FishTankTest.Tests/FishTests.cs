@@ -11,4 +11,14 @@ public class FishTests
         
         Assert.Equal("Bob Marley", result);
     }
+
+    [Fact]
+    public void AngelFishReturnsCorrectWeightOfFood()
+    {
+        var sut = new AngelFish();
+
+        var result = sut.GetFeedAmount();
+
+        Assert.AreEqual(0.2m, result);
+    }
 }
