@@ -42,7 +42,7 @@ public class FishTankTests
 
         for (int i = 0; i < numberOfFish; i++)
         {
-            sut.AddFish(new Goldfish($"Angelica {i}"));
+            sut.AddFish(new AngelFish($"Angelica {i}"));
         }
 
         var result = sut.Feed();
