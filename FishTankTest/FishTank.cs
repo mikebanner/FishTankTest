@@ -2,7 +2,7 @@ namespace FishTankTest;
 
 public class FishTank
 {
-    private IList<Goldfish> _fish = new List<Goldfish>();
+    private IList<IFeedableFish> _fish = new List<IFeedableFish>();
     
     public double Feed()
     {
@@ -16,7 +16,7 @@ public class FishTank
         return totalFeedWeight;
     }
 
-    public void AddFish(Goldfish fish)
+    public void AddFish(IFeedableFish fish)
     {
         _fish.Add(fish);
     }

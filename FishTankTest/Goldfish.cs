@@ -1,9 +1,14 @@
 namespace FishTankTest;
 
-public class Goldfish
+public class Goldfish : IFeedableFish
 {
+    private readonly double _feedWeight;
+    public Goldfish(double feedWeight)
+    {
+        _feedWeight = feedWeight;
+    }
     public double GetFeedAmount()
     {
-        return 0.1;
+        return _feedWeight;
     }
 }
