@@ -11,6 +11,16 @@ public class FishTests
         
         Assert.Equal("Bob Marley", result);
     }
+    
+    [Fact]
+    public void AngelfishReturnsCorrectName()
+    {
+        var fish = new AngelFish("Angelica");
+
+        var result = fish.GetName();
+        
+        Assert.Equal("Angelica", result);
+    }
 
     [Fact]
     public void AngelFishReturnsCorrectWeightOfFood()
