@@ -15,10 +15,10 @@ public class FishTests
     [Fact]
     public void AngelFishReturnsCorrectWeightOfFood()
     {
-        var sut = new AngelFish();
+        var sut = new AngelFish("Angelica");
 
         var result = sut.GetFeedAmount();
 
-        Assert.AreEqual(0.2m, result);
+        Assert.Equal(0.2m, result);
     }
 }
