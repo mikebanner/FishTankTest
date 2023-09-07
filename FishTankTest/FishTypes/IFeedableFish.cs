@@ -1,4 +1,4 @@
-namespace FishTankTest;
+namespace FishTankTest.FishTypes;
 
 public interface IFeedableFish
 {

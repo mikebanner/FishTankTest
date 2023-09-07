@@ -1,19 +1,15 @@
-using System.Drawing;
+namespace FishTankTest.FishTypes;
 
-namespace FishTankTest;
-
-public class AngelFish : IFeedableFish
+public class BabelFish : IFeedableFish
 {
     private readonly string _fishName;
     private readonly decimal _feedWeight;
-    public AngelFish(string name)
+    public BabelFish(string name)
     {
         _fishName = name;
-        _feedWeight = 0.2m;
+        _feedWeight = 0.3m;
     }
 
     public decimal GetFeedAmount() => _feedWeight;
-
     public string GetName() => _fishName;
- 
 }

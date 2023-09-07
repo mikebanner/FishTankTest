@@ -1,8 +1,10 @@
+using FishTankTest.FishTypes;
+
 namespace FishTankTest;
 
 public class FishTank
 {
-    private IList<IFeedableFish> _fish = new List<IFeedableFish>();
+    private readonly IList<IFeedableFish> _fish = new List<IFeedableFish>();
     
     public decimal Feed()
     {

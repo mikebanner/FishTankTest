@@ -1,3 +1,4 @@
+using FishTankTest.FishTypes;
 using NuGet.Frameworks;
 
 namespace FishTankTest.Tests;

@@ -1,3 +1,5 @@
+using FishTankTest.FishTypes;
+
 namespace FishTankTest.Tests;
 
 public class FishTests
