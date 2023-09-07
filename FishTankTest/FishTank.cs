@@ -4,9 +4,9 @@ public class FishTank
 {
     private IList<IFeedableFish> _fish = new List<IFeedableFish>();
     
-    public double Feed()
+    public decimal Feed()
     {
-        var totalFeedWeight = 0.0;
+        var totalFeedWeight = 0.0m;
         
         foreach (var fish in _fish)
         {

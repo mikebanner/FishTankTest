@@ -2,5 +2,5 @@ namespace FishTankTest;
 
 public interface IFeedableFish
 {
-    double GetFeedAmount();
+    decimal GetFeedAmount();
 }
