@@ -49,4 +49,22 @@ public class FishTankTests
         
         Assert.Equal(expectedWeight, result);
     }
+    
+    [Theory]
+    [InlineData(1, 0.3)]
+    [InlineData(2, 0.6)]
+    [InlineData(20, 6.0)]
+    public void FishTankWithMultipleBabelfishReturnsCorrectFeedWeight(int numberOfFish, decimal expectedWeight)
+    {
+        var sut = new FishTank();
+
+        for (int i = 0; i < numberOfFish; i++)
+        {
+            sut.AddFish(new BabelFish($"Angelica {i}"));
+        }
+
+        var result = sut.Feed();
+        
+        Assert.Equal(expectedWeight, result);
+    }
 }
