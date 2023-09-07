@@ -11,14 +11,9 @@ public class AngelFish : IFeedableFish
         _fishName = name;
         _feedWeight = 0.2m;
     }
-    
-    public decimal GetFeedAmount()
-    {
-        return _feedWeight;
-    }
 
-    public string GetName()
-    {
-        throw new NotImplementedException();
-    }
+    public decimal GetFeedAmount() => _feedWeight;
+
+    public string GetName() => _fishName;
+ 
 }
